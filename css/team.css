@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+.title-font {
+  font-family: "Dancing Script", cursive;
+  font-size: 15vh;
+  color: white;
+}
+
+.color-overlay {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767.98px) {
+  .color-overlay {
+    min-height: 30vh;
+  }
+  .title-font {
+    font-size: 50px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
