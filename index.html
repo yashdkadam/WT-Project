@@ -49,8 +49,8 @@
           <li><a href="#" data-nav-section="specialties">Specialties</a></li>
           <li><a href="#" data-nav-section="menu">Menu</a></li>
           <li><a href="#" data-nav-section="reservation">Reservation</a></li>
-          <li onclick="window.location.href = '/WT-Project/events'"><a href="/WT-Project/events" data-nav-section="Events">Events</a></li>
-          <li><a href="#" data-nav-section="events">Team</a></li>
+          <li><a href="#" data-nav-section="events">Events</a></li>
+          <li><a href="#" data-nav-section="team">Team</a></li>
           <li><a href="#" data-nav-section="contact">Contact</a></li>
         </ul>
       </div>
@@ -385,8 +385,29 @@
     </div>
   </section>
 
-  <section class="probootstrap-section-bg overlay" style="background-image: url(img/team.jpg)"
+  <section class="probootstrap-section-bg overlay" style="background-image: url(img/Koi-Ryde-dessert.jpeg)"
     data-stellar-background-ratio="0.5" data-section="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center probootstrap-animate">
+          <div class="probootstrap-heading">
+            <h2 class="primary-heading">Booking</h2>
+            <h3 class="secondary-heading">Events</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="probootstrap-section">
+    <div class="container probootstrap-animate fadeInUp probootstrap-animated">
+      <a href="/WT-Project/events/" style="display: flex; justify-content: center;">
+        <input type="button" name="submit" id="submit" value="Go to Events Page &rarr;" class="btn btn-lg btn-primary btn-block"
+          onclick="postReservation()" style="width: 25%;">
+      </a>
+    </div>
+  </section>
+  <section class="probootstrap-section-bg overlay" style="background-image: url(img/team.jpg)"
+    data-stellar-background-ratio="0.5" data-section="team">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center probootstrap-animate">
