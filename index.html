@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles-merged.css" />
   <link rel="stylesheet" href="css/style.min.css" />
-  
+
 
   <!-- favion link -->
   <link rel="icon" type="image/x-icon" href="/img/apple-touch-icon.png">
@@ -375,8 +375,8 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-md-offset-4">
-                <input type="button" name="submit" id="submit" value="Submit"
-                  class="btn btn-lg btn-primary btn-block" onclick="postReservation()" />
+                <input type="button" name="submit" id="submit" value="Submit" class="btn btn-lg btn-primary btn-block"
+                  onclick="postReservation()" />
               </div>
             </div>
           </form>
@@ -401,8 +401,8 @@
   <section class="probootstrap-section">
     <div class="container probootstrap-animate fadeInUp probootstrap-animated">
       <a href="/WT-Project/events/" style="display: flex; justify-content: center;">
-        <input type="button" name="submit" id="submit" value="Go to Events Page &rarr;" class="btn btn-lg btn-primary btn-block"
-          onclick="postReservation()" style="width: 25%;">
+        <input type="button" name="submit" id="submit" value="Go to Events Page &rarr;"
+          class="btn btn-lg btn-primary btn-block" onclick="postReservation()" style="width: 25%;">
       </a>
     </div>
   </section>
@@ -433,7 +433,7 @@
                  The youngest of the Poernomo Brothers, Reynold is a master of creativity and a marksman in crafting imaginative food. 
                 </p> -->
               <p class="">
-                <a href="team.html" class="probootstrap-custom-link link-sm">Read More</a>
+                <a href="/team/index.html" class="probootstrap-custom-link link-sm">Read More</a>
               </p>
             </div>
           </div>
@@ -450,7 +450,7 @@
                  Arnold is the mastermind behind crafting dishes which are packed to the brink with flavour.A current judge for MasterChef Indonesia
                 </p> -->
               <p class="">
-                <a href="team.html" class="probootstrap-custom-link link-sm">Read More</a>
+                <a href="/team/index.html" class="probootstrap-custom-link link-sm">Read More</a>
               </p>
             </div>
           </div>
@@ -466,7 +466,7 @@
               <!-- <p>
 The go to guy for the business’ operation and the ‘make it happen’ guy. Ronald has 10 years in the creative cocktail creations. </p> -->
               <p class="">
-                <a href="team.html" class="probootstrap-custom-link link-sm">Read More</a>
+                <a href="/team/index.html" class="probootstrap-custom-link link-sm">Read More</a>
               </p>
             </div>
           </div>
@@ -521,11 +521,13 @@ The go to guy for the business’ operation and the ‘make it happen’ guy. Ro
               <label for="c_message">Your Message</label>
             </div>
             <div class="form-group">
-              <textarea name="Message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              <textarea name="Message" id="message" cols="30" rows="7" class="form-control"
+                placeholder="Message"></textarea>
             </div>
 
             <div class="form-group">
-              <input type="button" value="Submit" class="btn btn-primary py-3 px-5" name="submit" onclick="postContact()">
+              <input type="button" value="Submit" class="btn btn-primary py-3 px-5" name="submit"
+                onclick="postContact()">
             </div>
           </form>
         </div>
@@ -629,16 +631,16 @@ The go to guy for the business’ operation and the ‘make it happen’ guy. Ro
         time: time,
         name: name,
         email: email,
-        phone: phone 
+        phone: phone
       }));
       var this_div = document.getElementById('reservation-form');
       this_div.insertAdjacentHTML('afterend', '<p style="text-align: center">Reservation Completed Successfully</p>');
-      }
-      
+    }
+
     function postContact() {
       let url = "https://wt-mini-project-2023-default-rtdb.firebaseio.com/contact.json";
       var contactEmail = document.getElementById('contact-email').value;
-      var contactName= document.getElementById('contact-name').value;
+      var contactName = document.getElementById('contact-name').value;
       var message = document.getElementById('message').value;
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url, true);
